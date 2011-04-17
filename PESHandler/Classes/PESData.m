@@ -42,10 +42,10 @@
 }
 
 - (void) recalculate {
-	NSUInteger newMinX = NSUIntegerMax;
-	NSUInteger newMaxX = 0;
-	NSUInteger newMinY = NSUIntegerMax;
-	NSUInteger newMaxY = 0;
+	NSInteger newMinX = NSIntegerMax;
+	NSInteger newMaxX = NSIntegerMin;
+	NSInteger newMinY = NSIntegerMax;
+	NSInteger newMaxY = NSIntegerMin;
 	for(PESStitchBlock *block in stitchBlocks) {
 		for(PESStitch *stitch in block.stitches) {
 			if(stitch.x < newMinX) {

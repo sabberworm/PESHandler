@@ -13,10 +13,10 @@
 @interface PESData : NSObject <NSCoding> {
 @private
 	NSMutableArray *stitchBlocks;
-	NSUInteger minX;
-	NSUInteger maxX;
-	NSUInteger minY;
-	NSUInteger maxY;
+	NSInteger minX;
+	NSInteger maxX;
+	NSInteger minY;
+	NSInteger maxY;
 	NSUInteger width;
 	NSUInteger height;
 	NSUInteger colorCount;
@@ -26,10 +26,10 @@
 @property(nonatomic, assign) NSUInteger height;
 @property(nonatomic, assign) NSUInteger colorCount;
 
-@property(nonatomic, assign) NSUInteger minX;
-@property(nonatomic, assign) NSUInteger maxX;
-@property(nonatomic, assign) NSUInteger minY;
-@property(nonatomic, assign) NSUInteger maxY;
+@property(nonatomic, assign) NSInteger minX;
+@property(nonatomic, assign) NSInteger maxX;
+@property(nonatomic, assign) NSInteger minY;
+@property(nonatomic, assign) NSInteger maxY;
 
 @property(nonatomic, readonly) NSMutableArray *stitchBlocks;
 
