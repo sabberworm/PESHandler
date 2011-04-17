@@ -1,7 +1,7 @@
 PESHandler
 ==========
 
-Mac OS X library for loading Brother emboidery PES files.
+Mac OS X library for loading Brother embroidery PES files.
 
 Very much incomplete at the moment.
 
