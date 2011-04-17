@@ -7,5 +7,5 @@ Very much incomplete at the moment.
 
 # Thanks
 
-To [PES-Convert](https://github.com/randrews/pes-convert) and [http://www.achatina.de/sewing/main/PEC.HTM]
+To [PES-Convert](https://github.com/randrews/pes-convert) and [](http://www.achatina.de/sewing/main/PEC.HTM)
 
