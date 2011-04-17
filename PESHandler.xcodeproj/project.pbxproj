@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		019A9706135B4D9D00EDC0A7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A9705135B4D9D00EDC0A7 /* Cocoa.framework */; };
+		019A9710135B4D9D00EDC0A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 019A970E135B4D9D00EDC0A7 /* InfoPlist.strings */; };
+		019A9718135B4D9D00EDC0A7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A9705135B4D9D00EDC0A7 /* Cocoa.framework */; };
+		019A971B135B4D9D00EDC0A7 /* PESHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A9702135B4D9D00EDC0A7 /* PESHandler.framework */; };
+		019A9721135B4D9D00EDC0A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 019A971F135B4D9D00EDC0A7 /* InfoPlist.strings */; };
+		019A9724135B4D9D00EDC0A7 /* PESHandlerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 019A9723135B4D9D00EDC0A7 /* PESHandlerTests.h */; };
+		019A9726135B4D9D00EDC0A7 /* PESHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 019A9725135B4D9D00EDC0A7 /* PESHandlerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		019A9719135B4D9D00EDC0A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 019A96F8135B4D9C00EDC0A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 019A9701135B4D9D00EDC0A7;
+			remoteInfo = PESHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019A9702135B4D9D00EDC0A7 /* PESHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PESHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		019A9705135B4D9D00EDC0A7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		019A9708135B4D9D00EDC0A7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		019A9709135B4D9D00EDC0A7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		019A970A135B4D9D00EDC0A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		019A970D135B4D9D00EDC0A7 /* PESHandler-Info.plist */ = {isa = PBXFileReference; path = "PESHandler-Info.plist"; sourceTree = "<group>"; };
+		019A970F135B4D9D00EDC0A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		019A9711135B4D9D00EDC0A7 /* PESHandler-Prefix.pch */ = {isa = PBXFileReference; path = "PESHandler-Prefix.pch"; sourceTree = "<group>"; };
+		019A9717135B4D9D00EDC0A7 /* PESHandlerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PESHandlerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		019A971E135B4D9D00EDC0A7 /* PESHandlerTests-Info.plist */ = {isa = PBXFileReference; path = "PESHandlerTests-Info.plist"; sourceTree = "<group>"; };
+		019A9720135B4D9D00EDC0A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		019A9722135B4D9D00EDC0A7 /* PESHandlerTests-Prefix.pch */ = {isa = PBXFileReference; path = "PESHandlerTests-Prefix.pch"; sourceTree = "<group>"; };
+		019A9723135B4D9D00EDC0A7 /* PESHandlerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PESHandlerTests.h; sourceTree = "<group>"; };
+		019A9725135B4D9D00EDC0A7 /* PESHandlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PESHandlerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		019A96FE135B4D9D00EDC0A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019A9706135B4D9D00EDC0A7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		019A9713135B4D9D00EDC0A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019A9718135B4D9D00EDC0A7 /* Cocoa.framework in Frameworks */,
+				019A971B135B4D9D00EDC0A7 /* PESHandler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		019A96F6135B4D9C00EDC0A7 = {
+			isa = PBXGroup;
+			children = (
+				019A970B135B4D9D00EDC0A7 /* PESHandler */,
+				019A971C135B4D9D00EDC0A7 /* PESHandlerTests */,
+				019A9704135B4D9D00EDC0A7 /* Frameworks */,
+				019A9703135B4D9D00EDC0A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		019A9703135B4D9D00EDC0A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				019A9702135B4D9D00EDC0A7 /* PESHandler.framework */,
+				019A9717135B4D9D00EDC0A7 /* PESHandlerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		019A9704135B4D9D00EDC0A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				019A9705135B4D9D00EDC0A7 /* Cocoa.framework */,
+				019A9707135B4D9D00EDC0A7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		019A9707135B4D9D00EDC0A7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				019A9708135B4D9D00EDC0A7 /* AppKit.framework */,
+				019A9709135B4D9D00EDC0A7 /* CoreData.framework */,
+				019A970A135B4D9D00EDC0A7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		019A970B135B4D9D00EDC0A7 /* PESHandler */ = {
+			isa = PBXGroup;
+			children = (
+				019A970C135B4D9D00EDC0A7 /* Supporting Files */,
+			);
+			path = PESHandler;
+			sourceTree = "<group>";
+		};
+		019A970C135B4D9D00EDC0A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				019A970D135B4D9D00EDC0A7 /* PESHandler-Info.plist */,
+				019A970E135B4D9D00EDC0A7 /* InfoPlist.strings */,
+				019A9711135B4D9D00EDC0A7 /* PESHandler-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		019A971C135B4D9D00EDC0A7 /* PESHandlerTests */ = {
+			isa = PBXGroup;
+			children = (
+				019A9723135B4D9D00EDC0A7 /* PESHandlerTests.h */,
+				019A9725135B4D9D00EDC0A7 /* PESHandlerTests.m */,
+				019A971D135B4D9D00EDC0A7 /* Supporting Files */,
+			);
+			path = PESHandlerTests;
+			sourceTree = "<group>";
+		};
+		019A971D135B4D9D00EDC0A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				019A971E135B4D9D00EDC0A7 /* PESHandlerTests-Info.plist */,
+				019A971F135B4D9D00EDC0A7 /* InfoPlist.strings */,
+				019A9722135B4D9D00EDC0A7 /* PESHandlerTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		019A96FF135B4D9D00EDC0A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		019A9701135B4D9D00EDC0A7 /* PESHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 019A9729135B4D9D00EDC0A7 /* Build configuration list for PBXNativeTarget "PESHandler" */;
+			buildPhases = (
+				019A96FD135B4D9D00EDC0A7 /* Sources */,
+				019A96FE135B4D9D00EDC0A7 /* Frameworks */,
+				019A96FF135B4D9D00EDC0A7 /* Headers */,
+				019A9700135B4D9D00EDC0A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PESHandler;
+			productName = PESHandler;
+			productReference = 019A9702135B4D9D00EDC0A7 /* PESHandler.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		019A9716135B4D9D00EDC0A7 /* PESHandlerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 019A972C135B4D9D00EDC0A7 /* Build configuration list for PBXNativeTarget "PESHandlerTests" */;
+			buildPhases = (
+				019A9712135B4D9D00EDC0A7 /* Sources */,
+				019A9713135B4D9D00EDC0A7 /* Frameworks */,
+				019A9714135B4D9D00EDC0A7 /* Resources */,
+				019A9715135B4D9D00EDC0A7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				019A971A135B4D9D00EDC0A7 /* PBXTargetDependency */,
+			);
+			name = PESHandlerTests;
+			productName = PESHandlerTests;
+			productReference = 019A9717135B4D9D00EDC0A7 /* PESHandlerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		019A96F8135B4D9C00EDC0A7 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 019A96FB135B4D9C00EDC0A7 /* Build configuration list for PBXProject "PESHandler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 019A96F6135B4D9C00EDC0A7;
+			productRefGroup = 019A9703135B4D9D00EDC0A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				019A9701135B4D9D00EDC0A7 /* PESHandler */,
+				019A9716135B4D9D00EDC0A7 /* PESHandlerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		019A9700135B4D9D00EDC0A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019A9710135B4D9D00EDC0A7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		019A9714135B4D9D00EDC0A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019A9721135B4D9D00EDC0A7 /* InfoPlist.strings in Resources */,
+				019A9724135B4D9D00EDC0A7 /* PESHandlerTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		019A9715135B4D9D00EDC0A7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		019A96FD135B4D9D00EDC0A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		019A9712135B4D9D00EDC0A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019A9726135B4D9D00EDC0A7 /* PESHandlerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		019A971A135B4D9D00EDC0A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 019A9701135B4D9D00EDC0A7 /* PESHandler */;
+			targetProxy = 019A9719135B4D9D00EDC0A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		019A970E135B4D9D00EDC0A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				019A970F135B4D9D00EDC0A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		019A971F135B4D9D00EDC0A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				019A9720135B4D9D00EDC0A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		019A9727135B4D9D00EDC0A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		019A9728135B4D9D00EDC0A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		019A972A135B4D9D00EDC0A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PESHandler/PESHandler-Prefix.pch";
+				INFOPLIST_FILE = "PESHandler/PESHandler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		019A972B135B4D9D00EDC0A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PESHandler/PESHandler-Prefix.pch";
+				INFOPLIST_FILE = "PESHandler/PESHandler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		019A972D135B4D9D00EDC0A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PESHandlerTests/PESHandlerTests-Prefix.pch";
+				INFOPLIST_FILE = "PESHandlerTests/PESHandlerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		019A972E135B4D9D00EDC0A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PESHandlerTests/PESHandlerTests-Prefix.pch";
+				INFOPLIST_FILE = "PESHandlerTests/PESHandlerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		019A96FB135B4D9C00EDC0A7 /* Build configuration list for PBXProject "PESHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019A9727135B4D9D00EDC0A7 /* Debug */,
+				019A9728135B4D9D00EDC0A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		019A9729135B4D9D00EDC0A7 /* Build configuration list for PBXNativeTarget "PESHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019A972A135B4D9D00EDC0A7 /* Debug */,
+				019A972B135B4D9D00EDC0A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		019A972C135B4D9D00EDC0A7 /* Build configuration list for PBXNativeTarget "PESHandlerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019A972D135B4D9D00EDC0A7 /* Debug */,
+				019A972E135B4D9D00EDC0A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 019A96F8135B4D9C00EDC0A7 /* Project object */;
+}
