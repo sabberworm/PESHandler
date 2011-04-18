@@ -146,7 +146,6 @@
 				currentStitch.x = deltaX;
 				currentStitch.y = deltaY;
 			}
-			NSLog(@"Adding stitch (%li, %li) in group %lu", currentStitch.x, currentStitch.y, currentBlock.color);
 		}
 		[previousStitch release];
 		previousStitch = currentStitch;
