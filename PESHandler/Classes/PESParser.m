@@ -59,9 +59,6 @@
 	
 	uint8_t colors[colorCount];
 	[self bytesInto:colors count:colorCount];
-	for(NSUInteger i = 0;i<colorCount;i++) {
-		NSLog(@"Found color %u", colors[i]);
-	}
 	
 	currentPosition = pecStart+521;
 	
