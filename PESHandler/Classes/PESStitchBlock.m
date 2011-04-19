@@ -46,6 +46,8 @@
 	for(PESStitch *stitch in stitches) {
 		CGFloat x = stitch.x + xOffset;
 		CGFloat y = stitch.y + yOffset;
+		x *= scale;
+		y *= scale;
 		if(first) {
 			[result moveToPoint:(NSPoint){x, y}];
 			first = NO;
@@ -54,7 +56,7 @@
 		}
 	}
 	
-	return result;
+	return [result autorelease];
 }
 
 @end
