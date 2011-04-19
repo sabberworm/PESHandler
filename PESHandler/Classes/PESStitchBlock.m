@@ -40,6 +40,10 @@
 }
 
 - (NSBezierPath *) pathFromBlockXOffset:(NSUInteger)xOffset yOffset:(NSInteger) yOffset andScale:(CGFloat)scale {
+	return [self pathFromBlockXOffset:xOffset yOffset:yOffset scale:scale ignoringJumps:NO];
+}
+
+- (NSBezierPath *) pathFromBlockXOffset:(NSUInteger)xOffset yOffset:(NSInteger) yOffset scale:(CGFloat)scale ignoringJumps:(BOOL)ignoringJumps {
 	NSBezierPath *result = [[NSBezierPath alloc] init];
 	
 	BOOL first = YES;
@@ -48,7 +52,7 @@
 		CGFloat y = stitch.y + yOffset;
 		x *= scale;
 		y *= scale;
-		if(first) {
+		if(first || (!ignoringJumps && stitch.isJumpStitch)) {
 			[result moveToPoint:(NSPoint){x, y}];
 			first = NO;
 		} else {
