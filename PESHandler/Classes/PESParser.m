@@ -138,7 +138,7 @@
 			}
 			if(previousStitch != nil) {
 				currentStitch.x = previousStitch.x + deltaX;
-				currentStitch.y = previousStitch.x + deltaY;
+				currentStitch.y = previousStitch.y + deltaY;
 			} else {
 				currentStitch.x = deltaX;
 				currentStitch.y = deltaY;
@@ -148,6 +148,7 @@
 		previousStitch = currentStitch;
 	}
 	[previousStitch release];
+	[currentBlock release];
 	
 	[result recalculate];
 	
