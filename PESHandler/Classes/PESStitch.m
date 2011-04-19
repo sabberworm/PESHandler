@@ -11,7 +11,7 @@
 
 @implementation PESStitch
 
-@synthesize x, y;
+@synthesize x, y, isJumpStitch;
 
 - (id)init
 {

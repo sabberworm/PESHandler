@@ -106,6 +106,7 @@
 			NSInteger deltaX = 0;
 			currentStitch = [[PESStitch alloc] init];
 			[currentBlock addStitch:currentStitch];
+			BOOL isJumpStitch = NO;
 			if((value1 & 128) == 128) {
 				//Jump stitch
 				deltaX = ((value1 & 15) * 256) + value2;
@@ -113,6 +114,7 @@
 					deltaX -= 0x1000;
 				}
 				[self bytesInto:&value2 count:1];
+				isJumpStitch = YES;
 			} else {
 				deltaX = value1;
 				if(deltaX > 63) {
@@ -127,6 +129,7 @@
 				if ((deltaY & 0x800) == 0x800) {
 					deltaY -= 0x1000;
 				}
+				isJumpStitch = YES;
 			} else {
 				deltaY = value2;
 				if(deltaY > 63) {
@@ -140,6 +143,7 @@
 				currentStitch.x = deltaX;
 				currentStitch.y = deltaY;
 			}
+			currentStitch.isJumpStitch = isJumpStitch;
 			[previousStitch release];
 			previousStitch = currentStitch;
 		}

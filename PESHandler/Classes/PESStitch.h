@@ -13,9 +13,11 @@
 @private
 	NSInteger x;
 	NSInteger y;
+	BOOL isJumpStitch;
 }
 
 @property(nonatomic, assign) NSInteger x;
 @property(nonatomic, assign) NSInteger y;
+@property(nonatomic, assign) BOOL isJumpStitch;
 
 @end
