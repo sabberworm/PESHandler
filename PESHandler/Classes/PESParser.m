@@ -43,6 +43,7 @@
 	[self bytesInto:start count:4];
 	
 	if(strcmp(start, "#PES") != 0) {
+		[result release];
 		return nil;
 	}
 	currentPosition += 4;
@@ -105,13 +106,11 @@
 			NSInteger deltaX = 0;
 			currentStitch = [[PESStitch alloc] init];
 			[currentBlock addStitch:currentStitch];
-			if(value1 >= 128) {
+			if((value1 & 128) == 128) {
 				//Jump stitch
-				deltaX = (value1 & 15);
-				if (deltaX <= 7) {
-					deltaX = value2 + (deltaX * 256);
-				} else {
-					deltaX = (value2 - 256) + ((deltaX - 15) * 256);
+				deltaX = ((value1 & 15) * 256) + value2;
+				if ((deltaX & 0x800) == 0x800) {
+					deltaX -= 0x1000;
 				}
 				[self bytesInto:&value2 count:1];
 			} else {
@@ -121,14 +120,12 @@
 				}
 			}
 			NSInteger deltaY = 0;
-			if(value2 >= 128) {
+			if((value2 & 128) == 128) {
 				//Jump stitch
-				deltaY = (value2 & 15);
 				[self bytesInto:&value3 count:1];
-				if (deltaY <= 7) {
-					deltaY = value3 + (deltaY * 256);
-				} else {
-					deltaY = (value3 - 256) + ((deltaY - 15) * 256);
+				deltaY = ((value2 & 15) * 256) + value3;
+				if ((deltaY & 0x800) == 0x800) {
+					deltaY -= 0x1000;
 				}
 			} else {
 				deltaY = value2;
@@ -143,9 +140,9 @@
 				currentStitch.x = deltaX;
 				currentStitch.y = deltaY;
 			}
+			[previousStitch release];
+			previousStitch = currentStitch;
 		}
-		[previousStitch release];
-		previousStitch = currentStitch;
 	}
 	[previousStitch release];
 	[currentBlock release];
