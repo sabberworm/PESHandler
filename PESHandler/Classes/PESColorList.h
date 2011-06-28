@@ -14,6 +14,7 @@
     
 }
 
++ (CGColorRef) CGColorWithColorNumber:(NSUInteger)num;
 
 #if TARGET_OS_MAC
 + (NSColor *) colorWithColorNumber:(NSUInteger)num;
